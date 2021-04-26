@@ -21,6 +21,7 @@ public class Main {
                 fileOutputStream.write(check);
                 numberChar++;
             }
+            // Hien thi so ki tu
             System.out.println("");
             System.out.println("Số ký tự : "+numberChar);
         } catch (IOException e) {
