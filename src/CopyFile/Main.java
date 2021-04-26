@@ -15,10 +15,14 @@ public class Main {
             fileInputStream = new FileInputStream("C:\\Users\\DELL\\Desktop\\Java_core\\text.txt");
             fileOutputStream = new FileOutputStream("C:\\Users\\DELL\\Desktop\\Java_core\\Contain text.txt");
             int check;
+            int numberChar =0;
             while ((check = fileInputStream.read()) != -1) {
                 System.out.print((char) check);
                 fileOutputStream.write(check);
+                numberChar++;
             }
+            System.out.println("");
+            System.out.println("Số ký tự : "+numberChar);
         } catch (IOException e) {
             System.err.println("Không tìm thấy file !!!");
         } finally {
